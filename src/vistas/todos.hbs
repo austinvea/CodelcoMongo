@@ -1,0 +1,38 @@
+<div class="row">
+    <!-- agregamos una fila única dentro del contenedor (cada fila tine 12 columnas) -->
+
+    {{#each contratos}}
+    <!-- como es un arreglo, se analiza documento a documento  -->
+
+    <div class="col-md-4 p-2">
+        <div class="container bg-info">
+            <div class="row">
+               
+            </div>
+            <div class="row">
+                <div class="col">Nombre:</div>
+                <div class="col">{{Nombre}}</div> 
+            </div>
+                        
+            <div class="row">
+                <div class="col">Apellido:</div>
+                <div class="col">{{Apellido}}</div> 
+            </div>
+
+             <div class="row">
+                <div class="col">Correo:</div>
+                <div class="col">{{email}}</div> 
+            </div>
+                        
+            <div class="row">
+                <div class="col">Área:</div>
+                <div class="col">{{Area_Trabajo}}</div> 
+            </div>
+           
+           
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
